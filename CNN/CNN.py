@@ -100,7 +100,6 @@ class CNNModel:
         if self.best_dev_epoch !=0:
             self.create_model()
             self.restore_tf_model(self.best_dev_epoch)
-            #self.restore_tf_model(9)
             print "load trained model at epoch: ",self.epoch,self.best_dev_epoch
             print "current model dev F1: ",self.best_dev_f1
         else:
@@ -256,30 +255,7 @@ class CNNModel:
                 print "Type Result: ",t_p,t_r,t_f
                 print "---------------------"
             sys.stdout.flush()       
-            '''        
-            print "Training Epoch ",epoch,epoch_loss
-            print "total training correct: ",epoch_loss,correct_instance,total_instance,correct_instance / total_instance
-            print "typed training correct: ",correct_typed_instance,total_typed_instance, correct_typed_instance / total_typed_instance
-            print "other training correct: ",correct_instance - correct_typed_instance, total_instance - total_typed_instance, (correct_instance - correct_typed_instance) / (total_instance - total_typed_instance + 1e-8)
-            
-            (p_span,r_span,f_span),(p_typed,r_typed,f_typed) =  self.decode(self.test_data,epoch,"test")
-            print "test at ",epoch,(p_span,r_span,f_span),(p_typed,r_typed,f_typed)
-            (p_span,r_span,f_span),(p_typed,r_typed,f_typed) =  self.decode(self.dev_data,epoch,"dev")
-            print "dev at ",epoch,(p_span,r_span,f_span),(p_typed,r_typed,f_typed)
-            f1 = f_typed
-            #print self.evaluate(self.test_data,epoch,"test")
-            #self.do_test()
-            if f1 > self.best_dev_f1:
-                self.best_dev_f1 = f1
-                self.best_dev_epoch = epoch
-                print "Better f1 achieved: ",epoch,(p_span,r_span,f_span),(p_typed,r_typed,f_typed)
-                #self.save_parameters()
-                #self.save_tf_model()
-            else:
-                print "Current f1: ",(p_span,r_span,f_span),(p_typed,r_typed,f_typed)
-            
-            print "-----------------------------"
-            '''
+
             if self.epoch > 25:
                 print "Finish Training"
                 break
