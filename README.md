@@ -1,4 +1,4 @@
-# Nugget Proposal Networks for Chinese Event Detection
+# Adaptive Scaling for Sparse Detection in Information Extraction
 
 This is the source code for paper "Adaptive Scaling for Sparse Detection in Information Extraction" in ACL2018.
 
