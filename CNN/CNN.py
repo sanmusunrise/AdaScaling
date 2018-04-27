@@ -3,8 +3,6 @@ from tfnlp.embedding.GloveEmbeddings import *
 from tfnlp.layer.Conv1DLayer import *
 from tfnlp.layer.NegativeMaskLayer import *
 from tfnlp.layer.MaskLayer import *
-#from tfnlp.layer.BatchNormalizationLayer import *
-#from bn import *
 from EEData import *
 from tfnlp.layer.DenseLayer import *
 from tfnlp.layer.MaskedSoftmaxLayer import *
