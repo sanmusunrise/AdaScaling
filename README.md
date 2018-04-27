@@ -23,7 +23,7 @@ Please cite:
 * Hongyu Lin, Yaojie Lu, Xianpei Han, Le Sun. *Adaptive Scaling for Sparse Detection in Information Extraction*. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics.
 
 ```
-@InProceedings{lin-Etal:2018:ACL2018,
+@InProceedings{lin-Etal:2018:ACL2018adaptive,
   author    = {Lin, Hongyu and Lu, Yaojie and Han, Xianpei and Sun, Le},
   title     = {Adaptive Scaling for Sparse Detection in Information Extraction},
   booktitle = {Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics},
