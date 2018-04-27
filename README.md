@@ -9,8 +9,8 @@ This is the source code for paper "Adaptive Scaling for Sparse Detection in Info
 ## Usage
 First, please unzip the word2vec embeddings in "CNN/"
 
-* gzip -d CNN/word_word2vec.dat.gz
-* gzip -d CNN/char_word2vec.dat.gz
+* gzip -d CNN/en_word2vec.dat.gz
+* gzip -d CNN/zh_word2vec.dat.gz
 
 Then enter CNN dir, run the program like
 
