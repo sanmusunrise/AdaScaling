@@ -30,7 +30,7 @@ Please cite:
   month     = {July},
   year      = {2018},
   address   = {Melbourne, Australia},
-  publisher = {Association for Computational Linguistics},
+  location = {Association for Computational Linguistics},
 }
 ```
 
